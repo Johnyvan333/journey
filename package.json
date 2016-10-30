@@ -1,0 +1,51 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "author": "Иван Архипов",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:/.git"
+  },
+  "bugs": {
+    "url": "https://github.com///issues"
+  },
+  "homepage": "https://github.com//",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.0.7",
+    "autoprefixer": "6.4.1",
+    "bourbon": "^4.2.7",
+    "browser-sync": "2.15.0",
+    "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
+    "gulp": "3.9.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "2.3.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.0.0",
+    "gulp-watch": "^4.3.10",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "6.5"
+  }
+}
