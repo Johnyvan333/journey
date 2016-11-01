@@ -9,7 +9,9 @@ var autoprefixer = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
 var minify = require('gulp-csso');
 var csscomb = require('gulp-csscomb');
+var concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
@@ -77,15 +79,32 @@ gulp.task('clean', function() {
   return del('build');
 })
 
+gulp.task('js', function() {
+  return gulp.src([
+      'js/*.js'
+    ])
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'))
+    .pipe(uglify())
+    .pipe(rename('main.min.js'))
+    .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('copy', function() {
   return gulp.src([
       'fonts/**/*.{woff, woff2}',
       'img/**',
-      'js/**',
-      '*.html'
+      '*.html',
+      'js/plugins/**/*.js'
     ], {
       base: '.'
     })
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('jsPlugins', function() {
+  return gulp.src(['js/plugins/**/*.js'])
+    .pipe(uglify())
     .pipe(gulp.dest('build'));
 });
 
@@ -109,8 +128,9 @@ gulp.task('htmlCopy', function() {
 gulp.task('serve', ['browserSync'], function() {
   gulp.watch('sass/**/*.{scss,sass}', ['style']);
   gulp.watch('*.html', ['htmlCopy']);
+  gulp.watch('js/**/*.js', ['js', 'jsPlugins'])
 });
 
 gulp.task('build', function(fn) {
-  run('clean', 'copy', 'style', 'images', 'symbols', fn)
+  run('clean', 'copy', 'style', 'js', 'images', 'symbols', fn)
 });

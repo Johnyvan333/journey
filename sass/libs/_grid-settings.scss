@@ -1,8 +1,0 @@
-$max-width: 1600px;
-$grid-columns: 16;
-$column: 100px;
-$gutter: 0;
-
-$mobile: new-breakpoint(max-width 480px);
-$tablet: new-breakpoint(max-width 900px min-width 481px);
-$desktop: new-breakpoint(min-width 901px);

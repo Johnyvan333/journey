@@ -20,6 +20,7 @@
     "css-mqpacker": "^5.0.1",
     "del": "^2.2.2",
     "gulp": "3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-csso": "^2.0.0",
     "gulp-imagemin": "^3.0.3",
@@ -29,6 +30,7 @@
     "gulp-sass": "2.3.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.10",
     "run-sequence": "^1.2.2"
   },
