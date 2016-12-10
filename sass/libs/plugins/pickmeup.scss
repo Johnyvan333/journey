@@ -7,8 +7,8 @@
  * @license   MIT License, see license.txt
  */
 $border-radius                    : .4em !default;
-$background                       : blue !default;
-$color                            : #eee !default;
+$background                       : none !default;
+$color                            : #555 !default;
 $background-hover                 : transparent !default;
 $color-hover                      : #88c5eb !default;
 $nav-color                        : $color !default;
@@ -30,6 +30,9 @@ $today-color                      : $color-hover !default;
 	box-sizing      : content-box;
 	display         : inline-block;
 	position        : absolute;
+  right: 72px;
+  top: 1180px;
+  font-size: 20px;
 	touch-action    : manipulation;
 
 	* {
