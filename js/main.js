@@ -1,3 +1,3 @@
 'use strict';
 
-pickmeup('.pickmeup');
+pickmeup('#pickmeup');
