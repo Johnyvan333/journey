@@ -1,0 +1,145 @@
+.text-main {
+  position: relative;
+  padding: 70px 80px;
+  &__wrapper {
+    font-size: 0;
+  }
+  &__upperLetter {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    z-index: -1;
+    font-size: 560px;
+    line-height: 1em;
+    font-weight: bold;
+    color: #d0d0d0;
+  }
+  &__block {
+    margin: 0;
+    column-width: 360px;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: normal;
+    color: #707070;
+    &::before {
+      content: '';
+      display: block;
+      height: 300px;
+    }
+  }
+}
+.promo {
+  &__block {
+    width: 100%;
+    padding: 162px 0;
+    margin: 0;
+    font-size: 37px;
+    line-height: 1em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background: #ddd url('../img/Train.jpg') center top no-repeat;
+    background-size: auto 100%;
+    &--second {
+      background-image: url('../img/people.jpg');
+    }
+  }
+}
+.about {
+  font-size: 0;
+  color: white;
+  &__block {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    min-height: 467px;
+    padding-top: 90px;
+    text-align: center;
+    background: #ccc url('../img/stockholm.jpg') top center no-repeat;
+    background-size: auto;
+    &--right {
+      background-image: url('../img/right_part.jpg');
+    }
+  }
+  &__header {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 10px 0;
+    margin: 0 auto;
+    &::after {
+      display: block;
+      content: '';
+      width: 77px;
+      height: 3px;
+      margin: 15px auto 0;
+      background: #a0cecb;
+    }
+  }
+  &__header--top {
+    width: 280px;
+    margin-top: 40px;
+    margin-bottom: 65px;
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: block;
+      content: '';
+      width: 77px;
+      height: 3px;
+      margin: 0 auto 15px;
+      background: #a0cecb;
+    }
+  }
+  &__promo {
+    width: 230px;
+    margin: 0 auto 25px;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.6;
+  }
+  &__text {
+    width: 360px;
+    height: 127px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 19px;
+    opacity: 0.8;
+  }
+  &__reviews-block {
+    text-align: center;
+  }
+  &__reviews-link {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    font-size: 21px;
+    opacity: 0.8;
+    cursor: pointer;
+    & i {
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__date {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    font-size: 21px;
+    opacity: 0.8;
+    & i {
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+  }
+}

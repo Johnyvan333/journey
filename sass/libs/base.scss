@@ -7,6 +7,7 @@ body {
   position: relative;
   min-width: 800px;
   max-width: 1920px;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 *, *::after, *::before {
   box-sizing: inherit;
@@ -15,7 +16,8 @@ body {
 .sprite {
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .sprite-arrow-left {
