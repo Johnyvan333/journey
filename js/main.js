@@ -48,7 +48,7 @@ window.addEventListener('keydown', function(event) {
 });
 
 function setSlider() {
-  var images = ['../img/slider-photo-1.jpg', '../img/slider-photo-2.jpg', '../img/slider-photo-3.jpg', '../img/slider-photo-4.jpg', '../img/slider-photo-5.jpg', '../img/slider-photo-6.jpg'];
+  var images = ['img/slider-photo-1.jpg', 'img/slider-photo-2.jpg', 'img/slider-photo-3.jpg', 'img/slider-photo-4.jpg', 'img/slider-photo-5.jpg', 'img/slider-photo-6.jpg'];
   var imagesTop = images.length - 1;
   var x = Math.floor(Math.random() * images.length);
 
