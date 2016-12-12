@@ -6,7 +6,7 @@
     max-height: 772px;
     min-height: 772px;
     padding: 0 72px;
-    background: #aaa url("../img/header-photo-1.jpg") center top no-repeat;
+    background: #aaa center top no-repeat;
     background-size: auto;
   }
   &__panel {
@@ -60,26 +60,6 @@
       font-size: 24px;
       text-transform: uppercase;
     }
-    & button {
-      background: none;
-      outline: none;
-      border: 2px solid #555;
-      border-radius: 20px;
-      font-size: 22px;
-      line-height: 1em;
-      font-weight: bold;
-      color: #555;
-      line-height: 1em;
-      text-transform: uppercase;
-      padding: 8px 16px;
-      cursor: pointer;
-      &:hover {
-        background: rgba(100, 100, 100, 0.1);
-      }
-      &:active {
-        background: rgba(0, 0, 0, 0.2);
-      }
-    }
   }
   &__aside-add {
     color: #222;
@@ -98,6 +78,26 @@
     overflow: hidden;
   }
 }
+.aside-btn {
+  background: none;
+  outline: none;
+  border: 2px solid #555;
+  border-radius: 20px;
+  font-size: 22px;
+  line-height: 1em;
+  font-weight: bold;
+  color: #555;
+  line-height: 1em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  cursor: pointer;
+  &:hover {
+    background: rgba(100, 100, 100, 0.1);
+  }
+  &:active {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
 .top-logo {
   float: left;
   margin-left: 15%;
@@ -110,14 +110,6 @@
     text-transform: uppercase;
     text-decoration: none;
   }
-}
-.main-menu {
-  float: right;
-  margin-right: 15%;
-}
-.menu-hamburger {
-  padding: 5px;
-  cursor: pointer;
 }
 .arrow-header {
   display: block;
@@ -171,7 +163,7 @@
   border-radius: 15px;
 }
 .aside-btn-more {
-  font-size: 0;
+  background: rgba(255, 255, 255, 0.8);
   transform: translate(250px, -85px);
 }
 @media (max-width: 800px) {
