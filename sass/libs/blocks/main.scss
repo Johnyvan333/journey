@@ -1,6 +1,7 @@
 .text-main {
   position: relative;
   padding: 70px 80px;
+  text-align: justify;
   &__wrapper {
     font-size: 0;
   }
@@ -150,9 +151,14 @@
     }
   }
   .text-main {
+    padding-left: 30px;
+    padding-right: 30px;
+    &__upperLetter {
+      font-size: 400px;
+    }
     &__block {
       &::before {
-        height: 30px;
+        display: none;
       }
     }
   }

@@ -63,3 +63,19 @@
 .social-link + .social-link {
   margin-left: 20px;
 }
+@media ('max-width:800px') {
+  .main-footer {
+    padding-top: 100px;
+  }
+  .social-block {
+    margin-bottom: 80px;
+  }
+  .social-link {
+    display: block;
+    margin: 0 auto;
+  }
+  .social-link + .social-link {
+    margin-left: auto;
+    margin-top: 30px;
+  }
+}

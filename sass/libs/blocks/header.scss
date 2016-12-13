@@ -3,7 +3,6 @@
   max-width: 1920px;
   margin: 0 auto;
   &__top-wrapper {
-    max-height: 772px;
     min-height: 772px;
     padding: 0 72px;
     background: #aaa center top no-repeat;
@@ -171,25 +170,35 @@
     top: 550px;
     width: 70px;
     height: 70px;
+    right: 30px;
     &::before {
       width: 40px;
       height: 40px;
     }
     &--left {
+      left: 30px;
       &::before {
         margin-left: 20px;
       }
     }
   }
   .page-header {
+    &__top-wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     &__description-block {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 80px;
       & h3 {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
     }
   }
   .pickmeup {
-    top: 1310px;
-    right: 60px;
+    font-size: 18px;
+    top: 1220px;
+    right: 30px;
   }
 }
